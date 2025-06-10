@@ -12,3 +12,9 @@ git clone https://github.com/joaostack/SimpleMalObfuscator; cd SimpleMalObfuscat
 ```
 dotnet restore
 ```
+
+```
+dotnet publish
+```
+
+And go to "bin" and Release" folder.
