@@ -17,4 +17,4 @@ dotnet restore
 dotnet publish
 ```
 
-And go to "bin" and Release" folder.
+And go to "bin" and "Release" folder.
