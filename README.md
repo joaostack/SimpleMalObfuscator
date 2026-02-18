@@ -17,6 +17,5 @@ dotnet restore
 dotnet publish
 ```
 
-And go to "bin" and "Release" folder.
-
+And go to "bin" and "Release" folder.\
 Send .ps1 file to victim.
