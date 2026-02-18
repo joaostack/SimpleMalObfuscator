@@ -19,4 +19,4 @@ dotnet publish
 
 And go to "bin" and "Release" folder.
 
-Sent .ps1 file to victim.
+Send .ps1 file to victim.
