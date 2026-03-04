@@ -13,7 +13,7 @@ namespace SimpleMalObfuscator
                     @@@@       
                     @@@@        
                     @@@@
-  SimpleMalObfuscador by github.com/joaostack
+  SimpleMalObfuscator by github.com/joaostack
 ";
 
         /// <summary>
@@ -44,4 +44,5 @@ namespace SimpleMalObfuscator
             }
         }
     }
+
 }
