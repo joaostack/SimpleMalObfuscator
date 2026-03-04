@@ -15,7 +15,7 @@ dotnet restore
 ```
 
 ```
-dotnet publish
+dotnet publish -p:PublishSingleFile=true
 ```
 
 And go to `bin/Release` folder.\
